@@ -1,0 +1,12 @@
+# the opens or creates a file that can be read and written in. 
+File.open('1st Project read file.txt', 'r+) do |f|
+
+# this writes in the file
+	f.write("Hello! Can you read me?")
+# this goes to the beginning of the file
+	f.seek(0)
+# read the content of the file into f_content 
+	f_content = f.read
+#prints  the file 
+	puts f_read
+end
